@@ -12,6 +12,6 @@ These scripts contain the instructions for the generation of RNA-seq and miRNA-s
 
 These scripts contain the steps to generate a drug dictionary from the "SIDER 4.1"  and "PharmacomiR" databases
 
-#Tripartite Network construction. 
+# Tripartite Network construction. 
 
 Construction of tripartite networks for each tumor subtype of breast cancer. Pharmacological information is integrated into genetic regulation networks (miRNA-gene) inferred with mutual information. The association is based on Gene-Drug interactions previously reported in the "PharmacomiR" database.
