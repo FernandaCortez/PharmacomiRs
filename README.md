@@ -20,7 +20,3 @@ Construction of tripartite networks for each tumor subtype of breast cancer. Pha
 
 A network analysis is performed to find which is the miRNA associated with a greater number of drugs within each of the networks, for the generation of subgraphs.
 
-# Enrichment of pharmacological categories 
-
-Construction of a heatmap to identify which are the enriched categories for each of the selected miRNAs.
-
