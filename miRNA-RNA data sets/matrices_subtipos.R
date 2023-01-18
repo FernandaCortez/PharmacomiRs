@@ -5,7 +5,7 @@ require(readr)
 setwd("~/Documentos/Proyecto/Tablas_expresion")
 
 #Load expression data 
-RNA <- read.table(file = 'RNAseqnormalized.tsv', 
+RNA = read.table(file = 'RNAseqnormalized.tsv', 
                   sep = '\t', header = TRUE)
 mirnas = read.table(file = 'miRNAseqNormi.tsv',
                     sep = '\t', header = TRUE)
