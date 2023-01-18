@@ -7,14 +7,19 @@ require(readr)
 #repeat by subtype
 #load mutual information  networks
 
-genes_mi <- read.table(file = 'miRNAs_gene_basal_.txt', sep = '\t', header = T)
+genes_mi <- read.table(file = 'miRNAs_gene_basal_.txt',
+                       sep = '\t', header = T)
+
 genes_mi <- genes_mi[-3]
 colnames(genes_mi)[1] <- "Gene"
 colnames(genes_mi)[2] <- "miRNA"
 
 #load genes GO
-genes_GO <- read.table(file = 'genes_basal.txt', sep = '\t', header = F)
+genes_GO <- read.table(file = 'genes_basal.txt',
+                       sep = '\t', header = F)
+
 colnames(genes_GO) [1] <- "Gene"
+
 
 #load pharmacomiR drug list 
 new_drugs_list <- read_delim("new_drugs_list.csv", 
