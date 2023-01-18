@@ -24,7 +24,8 @@ The script contain the steps to generate a drug dictionary from the "SIDER 4.1" 
 
 # Tripartite Network construction. 
 
-Construction of tripartite networks for each tumor subtype of breast cancer. Pharmacological information is integrated into genetic regulation networks (miRNA-gene) inferred with mutual information. The association is based on Gene-Drug interactions previously reported in the "PharmacomiR" database.
+Construction of tripartite networks for each tumor subtype of breast cancer. The pharmacological information is integrated into genetic regulation networks (miRNA-gene) of 10k interactions inferred with mutual information. The association is based on previously reported Gene-Drug interactions in the "PharmacomiR" database.
+
 
 # Topological analysis of networks. 
 
