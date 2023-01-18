@@ -14,6 +14,9 @@ https://github.com/CSB-IG/ARACNE-multicore
 
 Subsequently, the first 10k interactions (miRNA-gen) that have the highest mutual information value are chosen.
 
+
+
+
 # Drug dictionary construction. 
 
 The script contain the steps to generate a drug dictionary from the "SIDER 4.1"  and "PharmacomiR" databases.
