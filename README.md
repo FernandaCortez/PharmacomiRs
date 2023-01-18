@@ -12,6 +12,7 @@ Once the expression tables for each cancer subtype were generated, the mutual in
 
 https://github.com/CSB-IG/ARACNE-multicore
 
+Subsequently, the first 10k interactions that have the highest mutual information value are chosen.
 
 # Drug dictionary construction. 
 
