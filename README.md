@@ -16,7 +16,7 @@ Subsequently, the first 10k interactions (miRNA-gen) that have the highest mutua
 
 # Drug dictionary construction. 
 
-These scripts contain the steps to generate a drug dictionary from the "SIDER 4.1"  and "PharmacomiR" databases
+The script contain the steps to generate a drug dictionary from the "SIDER 4.1"  and "PharmacomiR" databases.
 
 # Tripartite Network construction. 
 
