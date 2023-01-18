@@ -16,16 +16,7 @@ subtypes = read.table(file = 'subtype.tsv',
 
 subtypes$samples <- colnames(RNA)
 
-
-
-# gene_names <- rownames(RNA)
-# write.table(gene_names, file="/home/fer/Documentos/Proyecto/gene_names.txt",
-# quote=FALSE, sep='\t', col.names = T)
-# 
-# mirnas_name <- rownames(mirnas)
-# write.table(mirnas_name, file="/home/fer/Documentos/Proyecto/mirnas_names.txt",
-# quote=FALSE, sep='\t', col.names = T)
-#==============================================================================
+#===============================================================
 
 #Classification by subtype
 lumB<- subset(subtypes, subtypes$subtype== "LumB") #140
@@ -52,7 +43,8 @@ her2_mir <- mirnas[colnames(mirnas) %in% her2$samples ]
 normal_mir <- mirnas[colnames(mirnas) %in% normal$samples ]
 
 
-#=====================================================================================
+#==========================================================
+
 #Generation of miRNA-RNA expression tables for each subtype
 
 #Luminal B
@@ -63,8 +55,6 @@ write.table(exp_table_lumB, file='exp_table_lumB.tsv',
             quote=FALSE, sep='\t', col.names = T)
 
 #luminal A
-# identical( colnames(lumA_genes), colnames(luma_mir)) #FALSE
-# lumA_genes <- lumA_genes[order(colnames(lumA_genes))]
 luma_mir <- luma_mir[order(colnames(luma_mir))]
 identical( colnames(lumA_genes), colnames(luma_mir)) #TRUE
 exp_table_lumA<- rbind(lumA_genes, luma_mir)
@@ -73,10 +63,9 @@ write.table(exp_table_lumA, file='exp_table_lumA.tsv',
             quote=FALSE, sep='\t', col.names = T)
 
 #Basal 
-# identical( colnames(basal_genes), colnames(basal_mir)) #FALSE
 basal_genes <- basal_genes[order(colnames(basal_genes))]
 basal_mir <- basal_mir[order(colnames(basal_mir))]
-identical( colnames(basal_genes), colnames(basal_mir))
+identical( colnames(basal_genes), colnames(basal_mir)) #TRUE
 exp_table_basal<- rbind(basal_genes, basal_mir)
 
 write.table(exp_table_basal, file='exp_table_basal.tsv', 
@@ -95,7 +84,6 @@ write.table(exp_table_her2, file='exp_table_her2.tsv',
 #Normal 
 identical( colnames(normal_genes), colnames(normal_mir)) #TRUE
 exp_table_normal<- rbind(normal_genes, normal_mir)
-
 write.table(exp_table_normal, file='exp_table_normal.tsv',
             quote=FALSE, sep='\t', col.names = T)
 
