@@ -7,13 +7,17 @@ setwd("~/Documentos/Proyecto/Nuevos datos/Diccionario de fármacos")
 
 #load data 
 
-drug_atc<- read.table(file = 'drug_atc.tsv', sep = '\t', header = F)
-drug_names <- read.table(file = 'drug_names.tsv', sep = '\t', header = F)
+drug_atc<- read.table(file = 'drug_atc.tsv', 
+                      sep = '\t', header = F)
+
+drug_names <- read.table(file = 'drug_names.tsv', 
+                      sep = '\t', header = F)
 
 colnames(drug_atc)[1] <- "CID"  
 colnames(drug_atc)[2] <- "ATC"
 colnames(drug_names)[1] <- "CID"  
 colnames(drug_names)[2] <- "DRUG"
+
 
 #Generate dictionary with ATC code and drug name
 
@@ -34,15 +38,19 @@ drug_dictionary <- merge(x= drugs_table ,  y= ATC_hierarchy , by= "ATC")
 
 
 #Save table
-write.table(drug_dictionary, file = "drug_dictionary(complete).csv", sep = "\t", 
-            row.names = F, col.names = TRUE)
+write.table(drug_dictionary, file = "drug_dictionary(complete).csv",
+            sep = "\t", row.names = F, col.names = TRUE)
 
 
 ##Identify drugs reported in the pharmacomiR database#
 
 #load data with pharmacomiR database information (all information)
 
-write.table(pharmacomiR, file = "pharmacomiR.csv", sep = "\t", 
+pharmacomiR <- read_delim("pharmacomiR.csv", 
+     delim = "\t", escape_double = FALSE, 
+     trim_ws = TRUE)
+
+#write.table(pharmacomiR, file = "pharmacomiR.csv", sep = "\t", 
             row.names = F, col.names = TRUE)
 
 pharmacomiR <- pharmacomiR[1:3]
