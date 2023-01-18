@@ -8,6 +8,11 @@ This repository contains
 
 These scripts contain the instructions for the generation of RNA-seq and miRNA-seq data expression matrices, for each breast cancer tumor subtype, for the inference of complex networks through mutual information using the ARACNe multicore algorithm.
 
+Once the expression tables for each cancer subtype were generated, the mutual information values are inferred using the ARACNe-multicore algorithm, which is available in this repository: 
+
+https://github.com/CSB-IG/ARACNE-multicore
+
+
 # Drug dictionary construction. 
 
 These scripts contain the steps to generate a drug dictionary from the "SIDER 4.1"  and "PharmacomiR" databases
