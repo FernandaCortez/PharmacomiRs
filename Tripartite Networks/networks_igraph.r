@@ -38,8 +38,10 @@ gene_drug <- unique(gene_drug)
 mir_gene<-unique(mir_gene)
 
 #Create an igraph object
-g1 <- graph_from_data_frame(d = mir_gene, directed = TRUE, vertices = NULL)
-g2 <- graph_from_data_frame(d = gene_drug, directed = TRUE, vertices = NULL)
+g1 <- graph_from_data_frame(d = mir_gene, directed = TRUE,
+                            vertices = NULL)
+g2 <- graph_from_data_frame(d = gene_drug, directed = TRUE,
+                            vertices = NULL)
 
 # Generate a tripartite network
 g3 = g1 + g2
@@ -81,8 +83,10 @@ gene_drug <- unique(gene_drug)
 mir_gene<-unique(mir_gene)
 
 #Create an igraph object
-g1 <- graph_from_data_frame(d = mir_gene, directed = TRUE, vertices = NULL)
-g2 <- graph_from_data_frame(d = gene_drug, directed = TRUE, vertices = NULL)
+g1 <- graph_from_data_frame(d = mir_gene, directed = TRUE,
+                            vertices = NULL)
+g2 <- graph_from_data_frame(d = gene_drug, directed = TRUE,
+                            vertices = NULL)
 
 # Generate a tripartite network
 g3 = g1 + g2
@@ -123,8 +127,10 @@ gene_drug <- unique(gene_drug)
 mir_gene<-unique(mir_gene)
 
 #Create an igraph object
-g1 <- graph_from_data_frame(d = mir_gene, directed = TRUE, vertices = NULL)
-g2 <- graph_from_data_frame(d = gene_drug, directed = TRUE, vertices = NULL)
+g1 <- graph_from_data_frame(d = mir_gene, directed = TRUE,
+                            vertices = NULL)
+g2 <- graph_from_data_frame(d = gene_drug, directed = TRUE,
+                            vertices = NULL)
 
 # Generate a tripartite network
 g3 = g1 + g2
@@ -179,8 +185,10 @@ gene_drug <- unique(gene_drug)
 mir_gene<-unique(mir_gene)
 
 #Create an igraph object
-g1 <- graph_from_data_frame(d = mir_gene, directed = TRUE, vertices = NULL)
-g2 <- graph_from_data_frame(d = gene_drug, directed = TRUE, vertices = NULL)
+g1 <- graph_from_data_frame(d = mir_gene, directed = TRUE,
+                            vertices = NULL)
+g2 <- graph_from_data_frame(d = gene_drug, directed = TRUE,
+                            vertices = NULL)
 
 # Generate a tripartite network
 g3 = g1 + g2
